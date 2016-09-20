@@ -43,6 +43,15 @@ public class AboutStrings {
 		String two = "two";
 		assertEquals(one+space+two, __);
 	}
+
+	@Koan
+	public void stringTokenSplitOnCommas(){
+                  String line = "This,is,a,,string,with ,commas,in it.";
+                  String[] stra = lin.split( "\\," ); // split on comma chars 
+                  for ( int x=0; x < stra.length; x++ ) {
+                    System.out.println( (x+1) + " " + stra[x] );
+                  }
+	}
 	
 	@Koan
 	public void efficientStringConcatenation(){
